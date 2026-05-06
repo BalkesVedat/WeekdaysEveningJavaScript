@@ -1,0 +1,43 @@
+<html>
+<head> 
+
+<!-- Internal Javascript kodu  -->
+<script>
+	function Mesaj() 
+	{ 
+		alert('Hello World!'); 
+	}     	
+</script>
+
+<!-- External javascript dosyası bağlama   -->
+<script src="js/site.js"></script>
+
+
+</head>
+
+<body style="color:black;">
+<h1> JAVASCRIPT </h1>
+<hr />
+
+<h3>1. Inline Javascript  yazımı:  </h3>
+<p> 
+JS kodları doğrudan HTML tag'i içerisine yazılabilir. JS kodu "on.." ile başlayan bir event için yazıldığında, ilgili event oluştuğunda çalışır. < script > tag'i içerisine yazmaya gerek yoktur. Örnek:
+</p>
+<button onclick="alert('Hello World...');"> Inline Kod Çalıştır</button>
+<hr />
+<h3>2. Internal Javascript yazımı :  </h3>
+<p>
+Sadece yazıldığı sayfadan erişilebilen ve kullanılabilen javascript kodlarıdır. Genellikle "function" olarak sayfanın head kısmında yazılırlar. Eğer body içinde yazılmak istenirse, body'nin en alt kısmında yazılırlar. 
+</p>
+<button onclick="Mesaj();"> Internal Function Çağır </button>
+<hr />
+<h3>3. External Javascript yazımı :  </h3>
+<p>
+İstenilen tüm sayfalardan erişilebilen ve kullanılabilen javascript kodlarıdır. Genellikle "function" olarak .js uzantılı dosyaların içinde yazılırlar. Bu dosyaları sayfaya bağlamak için "head" kısmında ya da "body" nin en altında < script src="js_dosya_adi.js"  > şeklinde bildirim yapılır.  İstenlen sayıda .js dosyası bir html dosyasına bağlanabilir.
+</p>
+<button onclick="HariciMesaj();"> External Function Çağır </button>
+<hr />
+
+
+</body>
+</html>
