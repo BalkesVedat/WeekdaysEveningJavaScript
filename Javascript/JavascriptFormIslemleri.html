@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/site.js" type="text/javascript"> </script>
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="Body">
+    <p id="Mesaj"></p>
+    <h1 id="Baslik">JS ile mesaj verme</h1>
+    <hr />
+    <h3>1. Alert fonksiyonu ile mesaj verme </h3>
+    <button id="btnAlert" onclick="HariciMesaj();"> Click Me! </button>
+
+    <h3>2. Kullanıcıdan veri alma </h3>
+    <button id="btnInput" onclick="prompt('Adınızı Giriniz','ali');"> İsim Al </button>
+
+    <h3>3. Alınan Veriyi sayfaya yerleştirme</h3>
+    <button id="btnVeriyiAktar" onclick="AlveAktar();"> İsmi Mesaja Ekle </button>
+    <h3>4. Değişkenler</h3>
+    <p> Hafızada geçici bir süre veri tutmak için kullanılan yapılardır. JS de 3 tip değişken vardır. var, let, const .  </p>
+    <hr class="cizgi" onclick="GizleGoster();" />
+    <div id="liste">
+        <ol>
+            <li> <strong>var</strong>: Global değişkendir. Sadece tanımlı olduğu blokta değil, tüm bloklarda geçerlidir. Aynı blok içerisinde aynı isimde bir değişkeni tekrar tanımlamaya izin verir. Değeri istenildiğinde değiştirilebilir. </li>
+            <li> <strong>let</strong>: Lokal değişkendir. Sadece tanımlandığı blokta geçerlidir. Aynı blokta let ile aynı isimde 2. bir değişken tanımlanamaz. Değeri istenildiğinde değiştirilebilir. </li>
+            <li> <strong>const</strong>: (constant - sabit) const ile tanımlanan değişkenin içerisine atanan değerin sonradan değiştirilmesi mümkün değildir. Değişken bir kere tanımlanır, tanımlanma esnasında ilk değer ataması yapılır ve program boyunca değeri değiştirilemez. Sadece tanımlandığı blokta geçerlidir.  </li>
+        </ol>
+    </div>
+    <hr />
+    <button id="btDegisken" onclick="Degiskenler();"> Dene </button>
+    <h3>Nesne stili değiştirme</h3>
+    <button id="btnStilVer" onclick="SetStyle();"> Stil Değiştir</button>
+    <button id="btnStilTemizle" onclick="ClearStyle();"> Stil Temizle</button>
+    <button id="btnClassAta" onclick="GizleGoster();"> Gizle/Göster  </button>
+
+</body>
+</html>

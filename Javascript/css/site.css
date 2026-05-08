@@ -1,0 +1,20 @@
+﻿body
+{
+}
+
+
+.gizle {
+    display:none;
+}
+
+.goster {
+    display:block;
+}
+
+hr {
+    border: 20px solid;
+    border-image: url('../images/asagi.jpg');
+    border-image-slice: 20;
+    border-image-repeat: repeat;
+}
+
