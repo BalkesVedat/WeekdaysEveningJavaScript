@@ -21,7 +21,7 @@
     <button id="btnVeriyiAktar" onclick="AlveAktar();"> İsmi Mesaja Ekle </button>
     <h3>4. Değişkenler</h3>
     <p> Hafızada geçici bir süre veri tutmak için kullanılan yapılardır. JS de 3 tip değişken vardır. var, let, const .  </p>
-    <hr class="cizgi" onclick="GizleGoster();" />
+    <hr id="imgHr" class="imgHrGizle" onclick="GizleGoster();" />
     <div id="liste">
         <ol>
             <li> <strong>var</strong>: Global değişkendir. Sadece tanımlı olduğu blokta değil, tüm bloklarda geçerlidir. Aynı blok içerisinde aynı isimde bir değişkeni tekrar tanımlamaya izin verir. Değeri istenildiğinde değiştirilebilir. </li>
@@ -31,10 +31,35 @@
     </div>
     <hr />
     <button id="btDegisken" onclick="Degiskenler();"> Dene </button>
-    <h3>Nesne stili değiştirme</h3>
+    <h3>5. Stili değiştirme</h3>
     <button id="btnStilVer" onclick="SetStyle();"> Stil Değiştir</button>
     <button id="btnStilTemizle" onclick="ClearStyle();"> Stil Temizle</button>
     <button id="btnClassAta" onclick="GizleGoster();"> Gizle/Göster  </button>
+    <h3>6. Form nesnelerinden değer okuma ve yazma</h3>
+    <input type="text" id="txtSayi1" />
+    <input type="text" id="txtSayi2" />
+    <input type="button" id="btnCarp" value="Carp" onclick="Hesapla(this);" />
+    <input type="button" id="btnTopla" value="Topla" onclick="Hesapla(this);" />
+    <input type="button" id="btnCikar" value="Cikar" onclick="Hesapla(this);" />
+    <input type="button" id="btnBol" value="Bol" onclick="Hesapla(this);" />
+    <input type="text" id="txtSonuc" />
+    <h3>7. Döngüler</h3>
+    <p> Bir işlemin birden fazla kez tekrar edilmesi gerektiğinde aynı kodu tekrar tekrar yazmak yerine döngü kullanılır.</p>
+    <h5>a. FOR döngüsü </h5>
+    <p> Bir işlem belirli bir adette çalışacak ise FOR döngüsü en iyi seçim olabilir. Diğer döngü yapılarına göre daha hızlı çalışır.</p>
+    <button onclick="For1();">For 1</button>
+    <button onclick="For2();">For 2</button>
+    <button onclick="For3(10);">For 3</button>
+    <p> NOT: Üstteki düğmelerin sonucu Console ekranına log'lanmaktadır.' </p>
 
+    <h5>b. WHILE Döngüsü </h5>
+    <p>Bir işlemin yapılıp yapılmaması bir koşula bağlı ise WHILE döngüsü tercih edilir. </p>
+    <button onclick="While1();">&copy; While 1</button>
+    <button onclick="While2();">&reg; While 2</button>
+    <p id="sonuc"></p>
+
+
+
+    <br /><br /><br />
 </body>
 </html>

@@ -11,10 +11,16 @@
     display:block;
 }
 
-hr {
+.imgHrGizle {
     border: 20px solid;
     border-image: url('../images/asagi.jpg');
     border-image-slice: 20;
     border-image-repeat: repeat;
 }
 
+.imgHrGoster {
+    border: 20px solid;
+    border-image: url('../images/yukari.jpg');
+    border-image-slice: 20;
+    border-image-repeat: repeat;
+}
